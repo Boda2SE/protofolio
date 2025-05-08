@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212; /* لون خلفية داكن */
+  color: #e5e5e5; /* لون النصوص الفاتح */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #1e1e1e; /* خلفية داكنة لزيادة الأناقة */
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #facc15; /* لون ذهبي لللوجو */
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  float: right;
+}
+
+nav a {
+  color: #e5e5e5; /* لون النص عشان يكون واضح */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #facc15; /* عند التمرير اللون يتحول للذهبي */
+}
+
+.hero {
+  background: linear-gradient(to right, #3b82f6, #0ea5e9); /* تدرج أزرق مائل للأنيق */
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero span {
+  color: #facc15; /* اللون الذهبي للمزيد من التميز */
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #facc15; /* زر بلون ذهبي */
+  color: #121212; /* نص الزر باللون الداكن */
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff9900; /* عند التمرير للزر يتحول للون برتقالي جميل */
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.dark {
+  background: #1e293b; /* لون داكن للمحتوى */
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #2d3748; /* خلفية داكنة عصرية */
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* تأثير الظل عند التمرير */
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #facc15; /* عنوان المشروع باللون الذهبي */
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #facc15;
+  border: 2px solid #facc15;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.btn-outline:hover {
+  color: #1e293b;
+  background: #facc15;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.skills-list li {
+  background-color: #334155;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  color: #facc15; /* نص المهارات باللون الذهبي */
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-links a {
+  color: #facc15;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-links a:hover {
+  color: #ff9900; /* اللون البرتقالي عند التمرير */
+}
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background: #1e1e1e;
+  color: #94a3b8;
+}
+
+
